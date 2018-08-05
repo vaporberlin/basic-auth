@@ -1,6 +1,7 @@
 import Vapor
 import Leaf
 import FluentSQLite
+import Authentication
 
 /// Called before your application initializes.
 public func configure(
@@ -14,7 +15,7 @@ public func configure(
     try routes(router)
     services.register(router, as: Router.self)
 
-    let myService = NIOServerConfig.default(port: 8004)
+    let myService = NIOServerConfig.default(port: 8012)
     services.register(myService)
 
     let leafProvider = LeafProvider()
@@ -29,4 +30,6 @@ public func configure(
     var migrations = MigrationConfig()
     migrations.add(model: User.self, database: .sqlite)
     services.register(migrations)
+
+    try services.register(AuthenticationProvider())
 }

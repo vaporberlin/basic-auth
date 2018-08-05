@@ -1,9 +1,9 @@
 <p align="center">
-  <h2>My First Controller 👨🏼‍💻 </h2>
+  <h2>Basic Auth 👨🏼‍💻 </h2>
   <h3>Tutorial to build this project</h3>
-  <h4><a href="https://medium.com/@martinlasek/tutorial-how-to-write-controllers-47b5fd9a65c6">How to write Controllers</a></h4>
+  <h4><a href="https://medium.com/@martinlasek/tutorial-how-to-build-basic-auth-5e618a656999">How to build Basic Auth</a></h4>
   <br>
-  <img width="100%" src="my-first-controller.png" alt="screenshot">
+  <img width="100%" src="basic-auth.png" alt="screenshot">
 </p>
 
 ## Community 🚀
